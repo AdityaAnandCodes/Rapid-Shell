@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unknown-property */
-import { Center, Environment, OrbitControls, PerspectiveCamera } from "@react-three/drei";
+import { Center, Environment, OrbitControls} from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { Suspense, useState } from "react";
 import CanvasLoader from "../components/Loader";
