@@ -1,10 +1,12 @@
+/* eslint-disable react/no-unknown-property */
 import { Center, Environment, OrbitControls, PerspectiveCamera } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { Suspense, useState } from "react";
 import CanvasLoader from "../components/Loader";
 import { Character } from "../components/Character";
 import { Laptop } from "../components/Laptop";
-import { CircleGeometry } from "three";
+import * as THREE from  "three";
+
 
 const Features = () => {
   const [playWave, setPlayWave] = useState(false);
@@ -99,9 +101,15 @@ const Features = () => {
               <Environment preset="night" />
               <fog attach="fog" args={['#0a0a0a', 5, 15]} />
               <pointLight shadow-mapSize-width={1024}
-  shadow-mapSize-height={1024}
-  shadow-camera-near={0.1}
-  shadow-camera-far={50} castShadow intensity={500} position={[0, 5, 2]} />
+              color={new THREE.Color(0x007BFF)} 
+              shadow-mapSize-height={1024}
+              shadow-camera-near={0.1}
+              shadow-camera-far={50} castShadow intensity={500} position={[-2, 5, 2]} />
+              <pointLight shadow-mapSize-width={1024}
+              color={new THREE.Color(0xFF007F)} 
+              shadow-mapSize-height={1024}
+              shadow-camera-near={0.1}
+              shadow-camera-far={50} castShadow intensity={500} position={[2, 5, 2]} />
               <Center>
                 <Suspense fallback={CanvasLoader}>
                   <group castShadow scale={2.5} position={[0, -1, 0]} >
