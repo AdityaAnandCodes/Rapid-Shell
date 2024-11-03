@@ -117,7 +117,7 @@ const Features = () => {
           </div>
           <div className="w-full h-full flex gap-2 p-2 flex-col justify-center items-center">
             <div className="text-4xl text-gray-400 pixelated-text">
-          Make Your Laptop as <span className="text-green-400">Powerful</span> as This <span className="text-green-00">Beast</span>!
+          Make Your Laptop as <span className="text-green-400">Powerful</span> as This <span className="text-green-00">Beast</span>! Install Rapid Shell
         </div>
         <div className="text-3xl text-gray-700 pixelated-text place-self-end px-4">~Rapid Shell</div>
       
