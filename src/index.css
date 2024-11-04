@@ -5,6 +5,7 @@
 
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
   margin: 0;
   padding: 0;
   -ms-overflow-style: none;
@@ -25,5 +26,10 @@ body{
   font-family: "Jersey 10",sans-serif;
 }
 
+.active {
+
+  color: #ffffff;
+
+}
 
 

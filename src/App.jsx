@@ -1,4 +1,6 @@
+import Docs from "./sections/Docs"
 import Features from "./sections/Features"
+import Footer from "./sections/Footer"
 import Hero from "./sections/Hero"
 import Installation from "./sections/Installation"
 import Navbar from "./sections/Navbar"
@@ -10,6 +12,8 @@ const App = () => {
         <Hero />
         <Installation />
         <Features />
+        <Docs />
+        <Footer />
     </main>
   )
 }
